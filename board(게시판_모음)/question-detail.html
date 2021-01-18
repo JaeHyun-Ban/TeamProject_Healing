@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>question-detail</title>
+    <title>질문내용</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -11,7 +11,6 @@
     <style type="text/css">
 
 
-        
 
 
     </style>
@@ -21,7 +20,7 @@
         <div class="container">
             <div class="board-detail">
                 <div class="board-title">
-                    <p>게시판내용</p>
+                    <p>질문내용</p>
                     
                 </div>
                 <div class="detail-body">
@@ -31,9 +30,9 @@
                             <strong>num : 1</strong>
                         </div>
                         <div class="second">
-                            <span>조회수</span>
-                            <span>2021-01-14</span>
-                            <span>작성자</span>
+                            <span>조회수<strong>23</strong></span>
+                            <span>작성일:<strong>2021-01-19</strong></span>
+                            <span>작성자:<strong>홍길동</strong></span>
                         </div>
                         <div class="third">
                             <div class="content">내용</div>
@@ -44,53 +43,37 @@
                         
                     </div>
                     <div class="button">
-                        <button type="button" class="btn btn-warning btn-sm disabled">삭제</button>
-                        <button type="button" class="btn btn-success btn-sm disabled">수정</button>
-                        <button type="button" class="btn btn-info btn-sm">목록</button>
+                        <button type="button" class="btn btn-danger btn-lage disabled">삭제</button>
+                        <button type="button" class="btn btn-success btn-large disabled">수정</button>
+                        <button type="button" class="btn btn-info btn-large">목록</button>
                         
                     </div>
                     
                 </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="board-reply">
-                <div class="reply-box">
-                    <div>
-                        <div class="reply-img" style="display: inline-block;">
-                            <img src="img/profile.png">
-                        </div>
-                        <div class="reply-text" style="display: inline-block;">
-                            <textarea>로그인시 가능 . 아닐시 경고창</textarea>
-                        </div>
-                        
-                        <div class="reply-button">
-                            <button type="button" class="btn btn-info btn-xs">댓글등록</button>
-                        </div>
-
+                <div class="detail-reply">
+                    <div class="reply-box">
+                        <span><textarea placeholder="답변작성공간"></textarea></span>
+                        <button type="button" class="reply-btn btn btn-info">등록</button>
                     </div>
                 </div>
+                <div class="reply-answer">
+                    <div class="answer-box">
+                        <div class="reply-first">
+                            <span>관리자아이디</span>
+                            <span>2021-01-19</span>
+                            <span>16:23</span>
+                        </div>
+                        <div class="reply-second">질문에 대한 답변 내용은 ~~~~입니다</div>
+                    </div>
+                </div>
+
             </div>
-            
         </div>
     </section>
 
-    <div class="container">
-        <div class="reply-detail">
-            <div class="reply-detail-img" style="display: inline-block;">
-                <img src="img/profile.png">
-            </div>
-            <div class="reply-detail-button" style="display: inline-block;">
-                <a>댓글달림</a>
-                <button type="button" class="btn btn-info btn-xs">수정</button>
-                <button type="button" class="btn btn-info btn-xs">삭제</button>
-            </div>    
-        </div>
-    </div>
+    
+
+    
     <div class="end">
 
     </div>

@@ -18,30 +18,51 @@ section {
 	font-size: xx-large;
 }
 
-
 /* notice-board */
+
+
 .notice-wrap{        
 	margin: 10px auto;
 	width: 100%;               
 }
 
+ 
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border-left: none;
+    border-right: none;
+}
+
+
 .notice-table table{
 	width: 100%;
 	text-align: center;
-	border: 1px solid #e1e1e1;
+	/* border: 1px solid #e1e1e1; */
 	border-collapse: collapse;
 }
+
 .notice-table th,.notice-table td{
-	border: 1px solid #e1e1e1;
+	/* border: 1px solid #e1e1e1; */
 	padding: 15px;
 	font-size: large;
+	font-weight: 200;
 }
+.notice-table thead{
+	border-top: rgb(124, 118, 118) 3px solid;
+}
+.notice-table th{
+	
+	font-size: medium;
+	font-weight: 100;
+	background-color: #E1E1E1;
+}
+
 .notice-table thead tr th{
 	text-align: center;
 }
 
 .notice-table tbody tr td:nth-child(2){
 	text-align: left;
+	padding-left: 7%;
 }
 .notice-table tbody tr td:nth-child(2):hover{
 	text-decoration: underline;
@@ -56,19 +77,19 @@ section {
 	color: inherit;
 }
 .notice-table thead tr th:nth-child(2){
-	width: 40%;
+	width: 30%;
 }
 .notice-table thead tr th:nth-child(1){
-	width: 10%;
+	width: 15%;
 }
 .notice-table thead tr th:nth-child(3){
 	width: 15%;
 }
 .notice-table thead tr th:nth-child(4){
-	width: 20%;
+	width: 25%;
 }
 .notice-table thead tr th:nth-child(5){
-	width: 10%;
+	width: 15%;
 }
 .paging{
 	padding: 30px;
@@ -112,13 +133,19 @@ section {
 	border-bottom: 1px solid #E1E1E1;
 }
 
+.reply-answer,.detail-reply,.detail-body{
+	padding: 5% 5%;
+	border: solid 1px #807c7c;
+	background-color: #e8ddcc;
+}
 
-.board-detail .detail-body .box{
+.detail-body .box{
 	height: 400px ;
-	width: 80%;
+	width: 100%;
 	margin: auto;
-	border: 1px solid #e1e1e1;
+	border: 1px solid black;
 	padding: 30px;
+	background-color: white;
 	
 }
 .box .first strong{
@@ -132,20 +159,28 @@ section {
 .box .first{
 	padding-top: 10px;
 	padding-bottom: 10px;
-	border-bottom: 1px dotted #E1E1E1;
+	border-bottom: 1px dotted black;
+}
+.box .first input{
+	font-size: large;
 }
 .box .second{
 	padding-top: 10px;
 	padding-bottom: 30px;
-	border-bottom: 1px dotted #E1E1E1;
+	border-bottom: 1px dotted black;
+	font-size: 20px;
+	vertical-align: middle;
 }
 
 
 .box .content{
 	padding: 10px;
+	font-size: 20px;
 	
 }
 .box .content-detail textarea{
+	padding: 15px;
+	font-size: large;
 	width:100%;
 	height: 180px;
 	resize: none;
@@ -153,8 +188,9 @@ section {
 }
 
 .box .second span{
-	font-size: small;
+	font-size: 15px;
 	text-align: right;
+	
 }
 
 .box span{
@@ -168,92 +204,84 @@ section {
 
 .detail-body .button{
 	padding-top: 10px;
-	width: 80%;
 	margin: auto;
 }
-.reply-detail{
-	height: auto ;
-	width: 80%;
-	margin: auto;
-	border: 1px solid #e1e1e1;
-	padding: 30px;
-}
 
-.reply-box{
-	height: 300px auto ;
-	width: 80%;
-	margin: auto;
-	border: 1px solid #e1e1e1;
-	padding: 30px;
-}
-
-.reply-text{
-	width: 80%;
-	padding-left: 50px;
-}
-.reply-text textarea{
-	width: 100%;
-	resize: none;
-	overflow: scroll auto;
-}
-
-.reply-img{
-	position: relative;
-	left: 10px;
-	bottom: 15px;
-}
-.reply-detail-img{
-	position: relative;
-	left: 10px;
-}
-
-.reply-button{
-	position: relative;
-	float: right;
-	top: 65px;
-	right: 15px;
-}
-.reply-detail-button{
-	position: relative;
-	left: 15px;
-}
 
 .end{
 	padding: 20px;
 }
 
+.reply-box textarea{
+	width: 100%;
+	font-size: large;
+	padding: 20px;
+	resize: none;
+}
+.reply-btn{
+	
+	float: right;
+	position: relative;
+	top: 5px;            
+}
+.reply-first span{
+	padding-right: 15px;
+	font-size: 15px;
+	font-weight: 250;
+	position: relative;
+	bottom: 20px;
+}
+.reply-second{
+	font-size: 20px;
+	font-weight: 400;
+}
+
+
 /* write */
 .write-wrap {
-	border: 1px solid black;
+	border: 1px solid #807c7c;
 	padding-bottom: 20px;
+	background-color: #e8ddcc;
 }
 
 .write-title,
 .write-info {
-	padding: 15px;
+	padding: 15px;	
 
 }
+.write-title{
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+.write-info{
+	padding-top: 3%;
+	padding-bottom: 1%;
+}
+
+
 
 
 .write-title {
-	border-top: 1px solid #e1e1e1;
-	border-left: 1px solid #e1e1e1;
-	border-right: 1px solid #e1e1e1;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
 }
 
 .write-info {
-	border-left: 1px solid #e1e1e1;
-	border-right: 1px solid #e1e1e1;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	
 }
 
 .write-info {
-	border-top: 1px dashed #e1e1e1;
-	border-bottom: 1px solid #e1e1e1;
+	border-top: 1px dashed black;
+	
 	font-size: 0;
 }
 
 .write-content {
-	border: solid 1px #e1e1e1;
+	border: solid 1px black;
+	border-top: none;
 }
 
 .write-content textarea {
@@ -266,6 +294,7 @@ section {
 	resize: none;
 	overflow: auto;
 	font-size: x-large;
+	border: 1px solid #807c7c;
 }
 
 .write-title .title-dt {
@@ -290,17 +319,20 @@ section {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-size: 0;
+	
+}
+.write-title dl{
+	margin: auto;
 }
 
 .write-title input {
-	font-size: large;
-	width: 150%;
+	font-size: x-large;
+	width: 142%;
 	height: 50px;
+	padding: 15px;
 }
 
-.write-content {
-	padding: 25px;
-}
+
 
 .title-dt {
 	text-align: center;
@@ -323,7 +355,18 @@ section {
 
 .info-dt {
 	position: relative;
-	left: 17%;
+	left: 16.5%;
 }
+.write-content,.write-info,.write-title{
+	background-color:white;
+}
+.write-content{
+	padding: 0% 10%;
+	padding-bottom: 6%;
+}
+.write-wrap .btn-info{
+	font-size: large;
+}
+
 
 
