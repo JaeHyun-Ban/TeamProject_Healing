@@ -30,7 +30,7 @@
 }
 
 .join-form form {
-  border: 1px solid#777;
+  border: 1px solid #e1e1e1;
   /* 테두리 둥글기 */
   border-radius: 10px;
   padding: 30px;
@@ -55,26 +55,21 @@
   width: 40%;
 }
 
-/* 회원가입창 버튼 색 변경 */
+/* 회원가입창 버튼*/
 .btn-idChk {
-  background-color: #7dadcd;
   border: none;
   float: right;
 }
 .btn-join {
-  background-color: #d96a53;
   border: none;
-  font-weight: 600;
+  font-weight: bold;
 }
 .btn-login {
-  background-color: #f0957d;
   border: none;
-  font-weight: 600;
+  font-weight: bold;
 }
 .btn-addrfind {
   float: right;
-  background-color: #f0957d;
-  color: white;
   border: none;
   height: 30px;
 }

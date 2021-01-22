@@ -12,13 +12,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- 기본 CSS -->
-    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../../css/base.css">
     <!-- 개인 디자인 추가-->
-    <link rel="stylesheet" href="../css/login_join.css">
+    <link rel="stylesheet" href="../../css/login_join.css">
     <!-- 
       테마 색상
        #e8ddcc, #ead0b8, #f0957d, #d96a53, #7dadcd
      -->
+
 
   </head>
 
@@ -44,7 +45,8 @@
               <div class="title-box">회원가입</div>
 
               <div class="form-group">
-                <label for="id">아이디</label><button class="btn btn-primary btn-idChk" type="submit">아이디 중복 체크</button>
+                <label for="id">아이디</label>
+                <button type="button" class="btn btn-warning btn-idChk">아이디 중복 체크</button>
                 <div class="input-shadow">
                   <input id="id" type="text" class="form-control" name="id" placeholder="8글자 이상">
                 </div>
@@ -65,22 +67,39 @@
                     placeholder="8글자 이상(특수만자 1개 이상 포함)">
                 </div>
               </div>
+              <div class="form-group">
+                <label for="name">이름</label>
+                <div class="input-shadow">
+                  <input id="name" type="text" class="form-control" name="name" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="phone">휴대폰</label>
+                <div class="input-shadow">
+                  <input id="phone" type="text" class="form-control" name="phone" placeholder="- 를 제외하고 입력하세요" />
+                </div>
+              </div>
 
               <div class="form-group">
                 <label for="email">이메일</label>
                 <div class="input-shadow">
-                  <input id="email" type="password" class="form-control" name="email" />
+                  <input id="email" type="text" class="form-control" name="email" />
+                  <select class="form-control" name="userEmail2" id="email2">
+                    <option>@naver.com</option>
+                    <option>@daum.net</option>
+                    <option>@gmail.com</option>
+                    <option>@hanmail.com</option>
+                  </select>
                 </div>
               </div>
 
               <!-- form-group묶는것 주의-->
               <div class="form-group addr-btn">
                 <label for="addr">주소</label>
-                <button class="btn btn-default btn-addrfind" type="submit">주소찾기</button>
+                <button class="btn btn-warning btn-addrfind" type="button" onclick="goPopup()">주소찾기</button>
                 <!-- <div class="input-group"> -->
                 <div class="input-shadow input-shadow-addr">
-                  <input id="addr" type="password" class="form-control addr-input" name="addr" placeholder="우편번호"
-                    readonly>
+                  <input type="text" class="form-control addr-input" id="addr" name="addr" placeholder="우편번호" readonly>
                 </div>
                 <div class="input-shadow">
                   <!-- 기본 주소-->
@@ -98,23 +117,14 @@
                 <button type="button" class="btn btn-primary btn-block btn-join">회원가입</button>
                 <button type="button" class="btn btn-success btn-block btn-login">로그인</button>
               </div>
+
+            </form>
           </div>
-
-          </form>
-
         </div>
       </div>
-      <!-- ============================================================================== -->
-
-
-
-
-
-
-
-
-
     </section>
+
+    <!-- ============================================================================== -->
 
     <footer class="my-footer">
       <h1>footer구간</h1>
