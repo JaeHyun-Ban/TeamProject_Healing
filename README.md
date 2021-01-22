@@ -13,6 +13,7 @@
 - 01.15 ~ 01.17: 데이터베이스 구축 & 설계
 - 01.18 ~ 01.25: 개발진행
 - 01.26 ~ 01.27: 테스트
+- 01.28: 발표
 
 ### 🚀 회의 기록
 
@@ -40,15 +41,25 @@
 
 ## 🌈 유용한 자료들
 
-### 🍥 [프로젝트 워크스페이스](https://github.com/JaeHyun-Ban/Healing) 🍥
+### 🥕 [프로젝트 워크스페이스](https://github.com/JaeHyun-Ban/Healing) 🥕
 
-### 💡 [자료모음](Repository/자료모음.md)
+### 🍥 [API 자료모음](Repository/API_자료모음.md)
 
-### 💡 [홈페이지자료](Repository/홈페이지자료.md)
+### 🍥 [데이터분석 자료모음](Repository/데이터분석.md)
+
+### 🍥 [홈페이지자료](Repository/홈페이지자료.md)
+
+---
+
+### 💡 [유용한 정규표현식 패턴](https://www.thepolyglotdeveloper.com/2015/05/use-regex-to-test-password-strength-in-javascript/)
 
 ### 💡 [초보자용 와이어프레임 제작가이드](https://webdesign.tutsplus.com/ko/articles/a-beginners-guide-to-wireframing--webdesign-7399)
 
 ### 💡 [HTML 색상표](https://wepplication.github.io/tools/colorPicker/)
+
+### 💡[작업 일정 계획표(임시)](https://docs.google.com/spreadsheets/d/1x7yt7xv9LZ90QcrdmwqmBK7iUQByxCocFjGvp-zsOT0/edit#gid=1709744959)
+
+### 🎈 [페이지 백그라운드 영상재생효과](https://www.w3schools.com/howto/howto_css_fullscreen_video.asp)
 
 ---
 
@@ -61,4 +72,4 @@
 
 ### 구분용 이모티콘
 
-🔎✅🥕🍥💡⭐🌈🚀
+🔎✅🥕🍥💡⭐🌈🚀🎈
